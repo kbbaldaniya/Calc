@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel='stylesheet' href='calc-style.css'> 
+</head>
+<body>
+        <div class="container">
+            <form>
+                <input type="text" name="display" placeholder="0" disabled>
+                <div>
+                    <input type="button" id="clr" name="AC" value="AC" onclick="form.display.value = ''">
+                    <input type="button" id="clr" value="<" onclick="form.display.value = form.display.value.substring(0,form.display.value.length - 1)">
+                    <input type="button" id="clr" value="/" onclick="form.display.value += '/'">   
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="form.display.value += '7'">
+                    <input type="button" value="8" onclick="form.display.value += '8'">
+                    <input type="button" value="9" onclick="form.display.value += '9'">
+                    <input type="button" id="clr" value="*" onclick="form.display.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="form.display.value += '4'">
+                    <input type="button" value="5" onclick="form.display.value += '5'">
+                    <input type="button" value="6" onclick="form.display.value += '6'">
+                    <input type="button" id="clr" value="+" onclick="form.display.value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="form.display.value += '1'">
+                    <input type="button" value="2" onclick="form.display.value += '2'">
+                    <input type="button" value="3" onclick="form.display.value += '3'">
+                    <input type="button" id="clr" value="-" onclick="form.display.value += '-'">
+                </div>
+                <div>
+                    <input type="button" id="clr" value="." onclick="form.display.value += '.'">
+                    <input type="button" id="clr" value="0" onclick="form.display.value += '0'">
+                    <input type="button" id="clr" name="=" value="=" onclick="form.display.value = eval(form.display.value)"> 
+                </div>
+            </form>
+        </div>
+</body>
+</html>
